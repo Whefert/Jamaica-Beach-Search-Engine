@@ -15,7 +15,8 @@
               <div class="mb-3 align-items-center">
                 <div class="input-group mb-3 w-50 mx-auto">
                   <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
-                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  <input type="text" class="form-control" placeholder="Enter beach name or location" aria-label="Username" aria-describedby="basic-addon1">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon1">Search</button>
                 </div>
               </div>
           </div>
