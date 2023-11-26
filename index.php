@@ -1,5 +1,8 @@
+<!-- Jefferson Daley - 20202583 -->
+
 <?php
 require "./Beaches.php";
+require "./Parishes.php";
 require "./db.php";
 ?>
 
@@ -18,17 +21,21 @@ require "./db.php";
           <div class="col h-100 d-flex justify-content-center flex-column "> 
               <h1 class="display-5 text-center mb-3">Jamaica Beach Search Engine</h1>
               <div class="mb-3 align-items-center">
+                <form action="search.php" method="GET">
                 <div class="input-group mb-3 w-50 mx-auto">
                   <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
-                  <input type="text" class="form-control" placeholder="Enter beach name or location" aria-label="Username" aria-describedby="basic-addon1">
-                  <button class="btn btn-outline-secondary" type="button" id="button-addon1">Search</button>
+                  <input type="text" class="form-control" name=search placeholder="Enter beach name or location" 
+                  aria-label="Username" aria-describedby="basic-addon1">
+                  <button class="btn btn-outline-secondary" type="submit" id="button-addon1">Search</button>
                 </div>
+                </form>
               </div>
           </div>
         </div>
       </div>
      
       <?php 
+      Parishes::importParishes();
       Beaches::importBeaches();
       ?>
 
