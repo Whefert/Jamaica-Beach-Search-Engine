@@ -6,6 +6,8 @@ A search engine allowing users to find Jamaican beaches via searching for their 
 
 See video demo of application below:
 
+![Jamaica Beach Search Engine Demo](https://github.com/Whefert/jamaica-beach-search-engine/blob/main/images/demo/Search%20Engine.gif)
+
 ## Acceptance Criteria
 
 Create your own search engine using PHP language and MySQL database services in order to implement the search engine features.
